@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1e1e1e;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+
+.header button {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Dashboard */
+.dashboard {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+/* Left Panel */
+.left-panel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.stats-card {
+    background-color: #e6f4e6;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+}
+
+.stats-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+
+.stats-card p {
+    font-size: 14px;
+    color: #757575;
+    margin-bottom: 16px;
+}
+
+.new-chat {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Right Panel */
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right-panel button {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Chat History */
+.chat-history {
+    display: flex;
+    gap: 16px;
+}
+
+.chat-card {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: left;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+
+.chat-card p {
+    font-size: 14px;
+    color: #757575;
+    margin-top: 8px;
+}
+
+/* Suggestions */
+.suggestions {
+    margin-top: 32px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.suggestions h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+
+.suggestions p {
+    font-size: 14px;
+    color: #757575;
+    margin-bottom: 16px;
+}
+
+.suggestions button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.logo {
+    width: 200px; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.back-btn {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #ddd;
+}

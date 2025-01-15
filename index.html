@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecovolve Prototype</title>
+    <link rel="stylesheet" href="landing_page.css" id="landing-page-css">
+    <link rel="stylesheet" href="sme_screen.css" id="sme-screen-css" disabled>
+    <link rel="stylesheet" href="ai_persone.css" id="ai-persona-css" disabled>
+</head>
+<body>
+    <!-- Landing Page -->
+    <section id="landing-page">
+        <header class="header">
+            <img src="logo.png" alt="EcoVolve Logo" class="logo">
+            <button id="sign-in-btn">Sign In</button>
+        </header>
+        <main class="hero">
+            <h1>Simplifying ESG Reporting for SMEs</h1>
+            <p>Transform your sustainability reporting with AI-powered insights and automated compliance tracking.</p>
+            <div class="buttons">
+                <button class="primary">Get Started Free</button>
+                <button class="secondary">Watch Demo</button>
+            </div>
+        </main>
+        <section class="ai-assistants">
+            <h2>Meet Your AI Assistants</h2>
+            <p>Specialized AI personas to guide you through every aspect of ESG reporting</p>
+            <div class="card-container">
+                <div class="card">
+                    <img src="compliance_expert.png" alt="Compliance Expert">
+                    <h3>Compliance Expert</h3>
+                    <p>Specialized in regulatory requirements and compliance frameworks</p>
+                    <button class="chat-now-btn">Chat Now</button>
+                </div>
+                <div class="card">
+                    <img src="data_analyst.png" alt="Data Analyst">
+                    <h3>Data Analyst</h3>
+                    <p>Expert in data interpretation and performance metrics</p>
+                    <button class="chat-now-btn">Chat Now</button>
+                </div>
+                <div class="card">
+                    <img src="strategy_advisor.png" alt="Strategy Advisor">
+                    <h3>Strategy Advisor</h3>
+                    <p>Guides you through sustainability strategy development</p>
+                    <button class="chat-now-btn">Chat Now</button>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>© 2025 Ecovolve. All rights reserved.</p>
+        </footer>
+    </section>
+
+    <!-- SME Screen -->
+    <section id="sme-screen" style="display: none;">
+        <header class="header">
+            <img src="logo.png" alt="EcoVolve Logo" class="logo">
+            <h1>SME Dashboard</h1>
+            <button id="back-to-landing" class="back-btn">Back</button>
+        </header>
+        <main class="dashboard">
+            <div class="dashboard-left">
+                <div class="stats-container">
+                    <div class="stats-card">
+                        <h2>Tax Saved:</h2>
+                        <p>10,000€</p>
+                        <button>See Details</button>
+                    </div>
+                    <div class="stats-card">
+                        <h2>CSRD Compliance:</h2>
+                        <p>75%</p>
+                        <button>See Details</button>
+                    </div>
+                    <div class="stats-card">
+                        <h2>Deadline for Actions:</h2>
+                        <p>30.01.2025</p>
+                        <button>See Details</button>
+                    </div>
+                    <div class="stats-card">
+                        <h2>Actions Taken:</h2>
+                        <p>13/18</p>
+                        <button>See Details</button>
+                    </div>
+                </div>
+                <section class="graph-section">
+                    <div id="graph-container">
+                        <p>Graph Placeholder</p>
+                    </div>
+                    <div class="filters">
+                        <select id="subject-select">
+                            <option value="CSRD Compliance" selected>CSRD Compliance</option>
+                        </select>
+                        <select id="graph-select">
+                            <option value="CO2 Compliance" selected>CO2 Compliance</option>
+                        </select>
+                        <button id="run-btn">Run</button>
+                    </div>
+                </section>                
+            </div>
+            <div class="dashboard-right">
+                <button>Compliance Check</button>
+                <button>Step-By-Step Guidance</button>
+                <button>Open Issues</button>
+                <button>Notifications</button>
+            </div>
+        </main>
+    </section>
+
+    <!-- AI Persona Screen -->
+    <section id="ai-persona-screen" style="display: none;">
+        <header class="header">
+            <img src="logo.png" alt="EcoVolve Logo" class="logo">
+            <h1>My Dashboard</h1>
+            <button id="back-to-landing" class="back-btn">Back</button>
+        </header>
+        <main class="dashboard">
+            <div class="left-panel">
+                <div class="stats-container">
+                    <div class="stats-card">
+                        <h2>10</h2>
+                        <p>Number of Chats</p>
+                    </div>
+                    <div class="stats-card">
+                        <h2>3,234$</h2>
+                        <p>Total Savings*</p>
+                    </div>
+                    <button class="new-chat">New Chat</button>
+                </div>
+                <section class="chat-history">
+                    <div class="chat-card">
+                        <h3>CSRD Compliance</h3>
+                        <p>AI Persona - CSRD</p>
+                    </div>
+                    <div class="chat-card">
+                        <h3>Automatic Reporting</h3>
+                        <p>AI Persona - Automated Reporting</p>
+                    </div>
+                    <div class="chat-card">
+                        <h3>Sustainability Roadmap</h3>
+                        <p>AI Persona - Tailored Solutions</p>
+                    </div>
+                </section>
+                <section class="suggestions">
+                    <h3>Suggestions</h3>
+                    <p>Did you know that you can use 3 different AI personas for your specific needs?</p>
+                    <button>Go to all Suggestions</button>
+                </section>
+            </div>
+        </main>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

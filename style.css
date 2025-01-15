@@ -1,0 +1,225 @@
+/* Temel reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #2C2C2C;
+  }
+  
+  /* ÜST NAVİGASYON
+     -------------------------------------------------------------------------- */
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .main-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .main-menu ul li a {
+    text-decoration: none;
+    color: #2C2C2C;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .main-menu ul li a:hover {
+    background-color: #efefef;
+    border-radius: 4px;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .account-btn {
+    background-color: #2C2C2C;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .hamburger-menu {
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: none; /* Masaüstünde gizli, dilersen mobilde gösterirsin */
+  }
+  
+  /* ANA PANEL (DASHBOARD)
+     -------------------------------------------------------------------------- */
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap; /* Ekran daraldığında satır atlayabilsin */
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Sol Kısım */
+  .dashboard-left {
+    flex: 2; /* 2 birimlik alan kaplar, sağ kısma göre biraz daha geniş */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  /* Her bir bilgi kutusu */
+  .stat-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: calc(50% - 1rem); /* 2'şerli kolonda görünmesi için */
+    min-width: 250px;       /* Çok daraldığında bozulmasın */
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .icon {
+    /* Yer tutucu ikon alanı */
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+  
+  .stat-title {
+    font-weight: 600;
+  }
+  
+  .stat-value {
+    margin: 0.25rem 0 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .detail-btn {
+    background-color: #2C2C2C;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    float: right;
+  }
+  
+  /* Dashboard özelleştirme butonu */
+  .customize-btn {
+    background-color: #2C2C2C;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 1rem 0;
+    font-weight: 500;
+    width: 100%;
+  }
+  
+  /* Sağ Kısım */
+  .dashboard-right {
+    flex: 1; /* Daha dar bir alan kaplar */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-left: 1rem; /* Sol kısımla arada boşluk oluştur */
+    min-width: 280px; /* Tamamen daralmayı engellemek için */
+  }
+  
+  /* Compliance Check listesi */
+  .compliance-list {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .compliance-list li {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 0.4rem 0.6rem;
+  }
+  
+  .run-btn {
+    background-color: #139913;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  
+  /* ALT PANEL (Grafik + Seçiciler)
+     -------------------------------------------------------------------------- */
+  .bottom-panel {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+  
+  .chart-container {
+    flex: 2;
+    min-width: 280px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .selectors {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .selectors label {
+    font-weight: 500;
+  }
+  
+  .selectors select {
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 4px;
+    border: 1
+  }
