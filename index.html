@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecovolve Prototype</title>
     <link rel="stylesheet" href="landing_page.css" id="landing-page-css">
-    <link rel="stylesheet" href="sme_screen.css" id="sme-screen-css" disabled>
+    <link rel="stylesheet" href="sme_screen.css" id="sme-screen-css">
     <link rel="stylesheet" href="ai_persone.css" id="ai-persona-css" disabled>
 </head>
 <body>
     <!-- Landing Page -->
-    <section id="landing-page">
+    <section id="landing-page" style="display: none;">
         <header class="header">
             <img src="logo.png" alt="EcoVolve Logo" class="logo">
             <button id="sign-in-btn">Sign In</button>
@@ -58,98 +58,105 @@
             <img src="logo.png" alt="EcoVolve Logo" class="logo">
             <h1>SME Dashboard</h1>
             <button id="back-to-landing" class="back-btn">Back</button>
+            <button class="customize-btn">Customize Dashboard</button>
         </header>
-        <main class="dashboard">
-            <div class="dashboard-left">
-                <div class="stats-container">
-                    <div class="stats-card">
-                        <h2>Tax Saved:</h2>
-                        <p>10,000€</p>
-                        <button>See Details</button>
-                    </div>
-                    <div class="stats-card">
-                        <h2>CSRD Compliance:</h2>
-                        <p>75%</p>
-                        <button>See Details</button>
-                    </div>
-                    <div class="stats-card">
-                        <h2>Deadline for Actions:</h2>
-                        <p>30.01.2025</p>
-                        <button>See Details</button>
-                    </div>
-                    <div class="stats-card">
-                        <h2>Actions Taken:</h2>
-                        <p>13/18</p>
-                        <button>See Details</button>
-                    </div>
+        <main class="dashboard-container">
+            <div class="metrics-row">
+                <div class="metric-card">
+                    <h3>Tax Saved:</h3>
+                    <p>10,000€</p>
+                    <button class="details-btn">See Details</button>
                 </div>
-                <section class="graph-section">
-                    <div id="graph-container">
-                        <p>Graph Placeholder</p>
-                    </div>
+                <div class="metric-card">
+                    <h3>CSRD Compliance:</h3>
+                    <p>75%</p>
+                    <button class="details-btn">See Details</button>
+                </div>
+                <div class="metric-card">
+                    <h3>Deadline for Actions:</h3>
+                    <p>30.01.2025</p>
+                    <button class="details-btn">See Details</button>
+                </div>
+                <div class="metric-card">
+                    <h3>Actions Taken:</h3>
+                    <p>13/18</p>
+                    <button class="details-btn">See Details</button>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="graph-section">
                     <div class="filters">
-                        <select id="subject-select">
-                            <option value="CSRD Compliance" selected>CSRD Compliance</option>
+                        <select id="category-select">
+                            <option value="CSRD Compliance">CSRD Compliance</option>
+                            <option value="CO2 Accounting">CO2 Accounting</option>
+                            <option value="Energy Efficiency">Energy Efficiency</option>
+                            <option value="Waste Management">Waste Management</option>
                         </select>
-                        <select id="graph-select">
-                            <option value="CO2 Compliance" selected>CO2 Compliance</option>
+                        <select id="report-select">
+                            <option value="">Select a Report</option>
                         </select>
                         <button id="run-btn">Run</button>
                     </div>
-                </section>                
-            </div>
-            <div class="dashboard-right">
-                <button>Compliance Check</button>
-                <button>Step-By-Step Guidance</button>
-                <button>Open Issues</button>
-                <button>Notifications</button>
+                    <div id="graph-container">
+                        <p>Graph Placeholder</p>
+                    </div>
+                </div>
+                <div class="tools-column">
+                    <button class="tool-btn">Compliance Check</button>
+                    <button class="tool-btn">Step-by-Step Guidance</button>
+                    <button class="tool-btn">Open Issues</button>
+                    <button class="tool-btn">Notifications</button>
+                </div>
             </div>
         </main>
     </section>
 
     <!-- AI Persona Screen -->
-    <section id="ai-persona-screen" style="display: none;">
+    <section id="ai-persona-screen">
         <header class="header">
             <img src="logo.png" alt="EcoVolve Logo" class="logo">
             <h1>My Dashboard</h1>
             <button id="back-to-landing" class="back-btn">Back</button>
         </header>
         <main class="dashboard">
-            <div class="left-panel">
-                <div class="stats-container">
-                    <div class="stats-card">
-                        <h2>10</h2>
-                        <p>Number of Chats</p>
-                    </div>
-                    <div class="stats-card">
-                        <h2>3,234$</h2>
-                        <p>Total Savings*</p>
-                    </div>
-                    <button class="new-chat">New Chat</button>
+            <div class="stats-container">
+                <div class="stats-card">
+                    <h2>10</h2>
+                    <p>Number of Chats</p>
                 </div>
-                <section class="chat-history">
-                    <div class="chat-card">
+                <div class="stats-card">
+                    <h2>3,234$</h2>
+                    <p>Total Savings*</p>
+                </div>
+            </div>
+            <section class="chat-history-container">
+                <div class="chat-buttons">
+                    <div class="chat-card" id="chat-1">
                         <h3>CSRD Compliance</h3>
                         <p>AI Persona - CSRD</p>
                     </div>
-                    <div class="chat-card">
+                    <div class="chat-card" id="chat-2">
                         <h3>Automatic Reporting</h3>
                         <p>AI Persona - Automated Reporting</p>
                     </div>
-                    <div class="chat-card">
+                    <div class="chat-card" id="chat-3">
                         <h3>Sustainability Roadmap</h3>
                         <p>AI Persona - Tailored Solutions</p>
                     </div>
-                </section>
-                <section class="suggestions">
-                    <h3>Suggestions</h3>
-                    <p>Did you know that you can use 3 different AI personas for your specific needs?</p>
-                    <button>Go to all Suggestions</button>
-                </section>
-            </div>
+                </div>
+                <div class="chat-preview">
+                    <p>Start a new chat</p>
+                </div>
+            </section>
+            <section class="suggestions">
+                <h3>Suggestions</h3>
+                <p>Did you know that you can use 3 different AI personas for your specific needs?</p>
+                <button>Go to all Suggestions</button>
+            </section>
         </main>
     </section>
 
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
