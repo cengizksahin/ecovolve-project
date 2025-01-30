@@ -1,203 +1,195 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
+/* General Styles */
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #ffffff;
-    color: #1e1e1e;
-    line-height: 1.5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
 }
 
-/* Header */
-.header {
-    width: 100%;
-    max-width: 1200px;
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;
+    width: 100%;
     background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eaeaea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #1e1e1e;
+.logo {
+    height: 120px;
+    width: auto;
 }
 
-.header nav {
-    display: flex;
-    gap: 16px;
-    list-style: none;
-}
-
-.header nav li {
-    font-size: 14px;
-    color: #757575;
-}
-
-.header button {
-    background-color: #4caf50;
+#sign-in-btn {
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 8px;
-    padding: 8px 16px;
-    font-size: 14px;
+    border-radius: 4px;
+    padding: 10px 20px;
     cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
 }
 
-/* Hero Section */
-.hero {
-    width: 100%;
-    max-width: 1200px;
+#sign-in-btn:hover {
+    background-color: #45a049;
+}
+
+main.hero {
     text-align: center;
-    padding: 64px 16px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
-    color: #1e1e1e;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .hero p {
     font-size: 18px;
-    color: #757575;
-    margin-bottom: 32px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 40px;
 }
 
-.hero .buttons {
+.buttons {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 20px;
 }
 
-.hero .buttons button {
-    padding: 16px 32px;
-    border-radius: 8px;
+.primary {
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 20px;
     font-size: 16px;
-    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.hero .buttons .primary {
-    background-color: #4caf50;
+.primary:hover {
+    background-color: #45a049;
+}
+
+.secondary {
+    background-color: transparent;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.secondary:hover {
+    background-color: #4CAF50;
     color: white;
 }
 
-.hero .buttons .secondary {
-    background-color: transparent;
-    color: #4caf50;
-    border: 2px solid #4caf50;
-}
-
-/* Meet AI Assistants */
 .ai-assistants {
-    width: 100%;
+    padding: 50px;
     max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 64px 16px;
 }
 
 .ai-assistants h2 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
-    margin-bottom: 16px;
-    color: #1e1e1e;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .ai-assistants p {
     font-size: 16px;
-    color: #757575;
-    margin-bottom: 32px;
+    color: #666;
+    margin-bottom: 40px;
 }
 
-.ai-assistants .card-container {
+.card-container {
     display: flex;
+    gap: 20px;
     justify-content: center;
-    gap: 24px;
+    flex-wrap: wrap;
 }
 
-.ai-assistants .card {
-    width: 300px;
-    padding: 24px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+.card {
+    background-color: white;
+    border: 1px solid #eaeaea;
     border-radius: 8px;
+    padding: 20px;
+    width: 300px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
 }
 
-.ai-assistants .card img {
-    width: 64px;
-    height: 64px;
-    margin-bottom: 16px;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.ai-assistants .card h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #1e1e1e;
-    margin-bottom: 8px;
+.card img {
+    max-width: 80px;
+    margin-bottom: 20px;
 }
 
-.ai-assistants .card p {
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
     font-size: 14px;
-    color: #757575;
-    margin-bottom: 16px;
+    color: #666;
+    margin-bottom: 20px;
 }
 
-.ai-assistants .card button {
-    background-color: #4caf50;
+.chat-now-btn {
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 8px;
-    padding: 8px 16px;
+    border-radius: 4px;
+    padding: 10px 15px;
     font-size: 14px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Footer */
-.footer {
+.chat-now-btn:hover {
+    background-color: #45a049;
+}
+
+footer {
     width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px;
-    background-color: #f9f9f9;
-}
-
-.footer p {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
     font-size: 14px;
-    color: #757575;
+    position: relative;
+    bottom: 0;
 }
 
-.footer nav ul {
-    display: flex;
-    gap: 16px;
-    list-style: none;
-}
-
-.footer nav ul li {
-    font-size: 14px;
-    font-weight: 500;
-    color: #1e1e1e;
-}
-.logo {
-    width: 200px; /* Adjust this value as needed */
-    height: auto; /* Maintain aspect ratio */
+footer p {
+    margin: 0;
 }
