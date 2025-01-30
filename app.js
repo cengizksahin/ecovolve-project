@@ -224,7 +224,7 @@ chatButtons.forEach((button, index) => {
                     <p><strong>AI Persona:</strong> Based on your latest report, your CSRD compliance score is at 75%. You can improve it by enhancing supply chain transparency and increasing your renewable energy usage.</p>
                     <p><strong>User:</strong> What are the key areas I need to focus on for the next audit?</p>
                     <p><strong>AI Persona:</strong> The main areas for improvement include detailed emissions tracking, employee sustainability training, and proper documentation of ESG initiatives.</p>
-                    <p><strong>User:</strong> Can you generate a summary of our sustainability report for this quarter?</p>                                     
+                    <p><strong>User:</strong> Can you generate a summary of our sustainability report for this quarter?</p>
                     </div>
             `;
         } else {
