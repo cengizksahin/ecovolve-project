@@ -220,14 +220,42 @@ chatButtons.forEach((button, index) => {
             // Sample message history for the first button
             chatPreview.innerHTML = `
                 <div>
-                    <p><strong>User:</strong> What's the latest update on CSRD Compliance?</p>
-                    <p><strong>AI Persona:</strong> The CSRD compliance score has increased by 5% this month.</p>
-                    <p><strong>User:</strong> What's the latest update on CSRD Compliance?</p>
-                    <p><strong>AI Persona:</strong> The CSRD compliance score has increased by 5% this month.</p>
-                    <p><strong>User:</strong> What's the latest update on CSRD Compliance?</p>
-                    <p><strong>AI Persona:</strong> The CSRD compliance score has increased by 5% this month.</p>                                        
-                    <p><strong>User:</strong> What's the latest update on CSRD Compliance?</p>
-                    <p><strong>AI Persona:</strong> The CSRD compliance score has increased by 5% this month.</p>
+<p><strong>User:</strong> How can I improve my company's CSRD compliance score?</p>
+<p><strong>AI Persona:</strong> Based on your latest report, your CSRD compliance score is at 75%. You can improve it by enhancing supply chain transparency and increasing your renewable energy usage.</p>
+
+<p><strong>User:</strong> What are the key areas I need to focus on for the next audit?</p>
+<p><strong>AI Persona:</strong> The main areas for improvement include detailed emissions tracking, employee sustainability training, and proper documentation of ESG initiatives.</p>
+
+<p><strong>User:</strong> Can you generate a summary of our sustainability report for this quarter?</p>
+<p><strong>AI Persona:</strong> Sure! Here’s a brief summary:
+   <ul>
+       <li><strong>CO2 Emissions:</strong> Reduced by 12% compared to the previous quarter.</li>
+       <li><strong>Renewable Energy Usage:</strong> Increased from 45% to 55%.</li>
+       <li><strong>Waste Reduction:</strong> Implemented new recycling policies, reducing waste by 18%.</li>
+   </ul>
+   Would you like a downloadable PDF version?
+</p>
+
+<p><strong>User:</strong> That would be great! Also, what specific actions should we take to align with 2030 sustainability goals?</p>
+<p><strong>AI Persona:</strong> To align with 2030 goals, I recommend:
+   <ul>
+       <li>Switching to 100% renewable energy sources.</li>
+       <li>Investing in carbon offset programs.</li>
+       <li>Engaging in sustainable supply chain partnerships.</li>
+   </ul>
+   I can generate a roadmap for you if needed.
+</p>
+
+<p><strong>User:</strong> Yes, please generate a roadmap and highlight the key milestones.</p>
+<p><strong>AI Persona:</strong> Roadmap generated! Your key milestones include:
+   <ul>
+       <li>2025: Reduce carbon footprint by 20%.</li>
+       <li>2027: Achieve 80% waste recycling efficiency.</li>
+       <li>2030: Reach net-zero emissions.</li>
+   </ul>
+   Would you like automated reminders and progress tracking?
+</p>
+
                     </div>
             `;
         } else {
