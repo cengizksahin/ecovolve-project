@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Event listener for the "Back to SME" button
+    /*/ Event listener for the "Back to SME" button
     if (backToSmeButton) {
         backToSmeButton.addEventListener("click", () => {
             hideAllScreens();
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("sme-screen-css").disabled = false;
             document.getElementById("ai-persona-css").disabled = true;
         });
-    }
+    }*/
 
     // Event listener for the "Run" button
     if (runButton) {
